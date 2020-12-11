@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { RadionButton } from '../components/RadionButton';
+
+import { MessageBox, RadionButton } from '../components';
 
 export const Aside = () => {
   return (
@@ -8,18 +9,30 @@ export const Aside = () => {
       <Header>United<Span>Properties</Span></Header>
       <Stages>
         <Contact>
-          <RadionButton />
+          <RadionButton state={true} />
+          <Text>Contact details</Text>
+        </Contact>
+        <Contact>
+          <RadionButton state={false} />
+          <Text style={{ opacity: 0.5 }}>Investment plans</Text>
+        </Contact>
+        <Contact>
+          <RadionButton state={false} />
+          <Text style={{ opacity: 0.5 }}>Investment preferences</Text>
         </Contact>
       </Stages>
+      <MessageBox />
     </Container>
   )
 }
 
 const Container = styled.div({
   backgroundColor: "#35A0EE",
-  width: "30%",
-  paddingTop: 40,
+  width: "25%",
+  paddingTop: 35,
+  paddingBottom: 35,
   paddingLeft: 75,
+  paddingRight: 75,
 });
 
 const Header = styled.div({
@@ -27,19 +40,27 @@ const Header = styled.div({
   textTransform: 'uppercase',
   fontWeight: '700',
   fontSize: 18,
-  paddingBottom: 250
+  paddingBottom: 250,
 });
 
 const Span = styled.span({
-  color: "rgba(255, 255, 255, 0.5)"
+  color: "rgba(255, 255, 255, 0.5)",
 });
 
 const Stages = styled.div({
-
+  paddingBottom: 130,
 });
 
 const Contact = styled.div({
+  display: 'flex',
+  alignItems: 'center',
+});
 
-})
+const Text = styled.p({
+  marginLeft: 15,
+  color: 'white',
+  fontSize: 18,
+  fontWeight: 700,
+});
 
 // #35A0EE

@@ -1,21 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const RadionButton = () => {
+export const RadionButton = ({ state }) => {
   return (
-    <Container>
-
+    <Container style={{ opacity: state ? 1 : 0.5 }}>
+      {state && <Content />}
     </Container>
   );
 };
 
 const Container = styled.div`
-  backgroundColor: blue;
-  width: 30px;
-  height: 30px;
-  border: 2px solid white;
-  borderRadius: 3;
-`
-  // borderWidth: 3,
-  // borderColor: 'grey',
-  // backgroundColor: "#35A0EE",
+  width: 17px;
+  height: 17px;
+  border: 3px solid white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Content = styled.div({
+  backgroundColor: 'white',
+  width: 10,
+  height: 10,
+  borderRadius: 2,
+});
+
