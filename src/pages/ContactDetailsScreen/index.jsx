@@ -7,7 +7,7 @@ export const ContactDetailsScreen = () => {
   return (
     <Container>
       <Aside />
-      <Header />
+      <Header step="1" />
     </Container>
   );
 };

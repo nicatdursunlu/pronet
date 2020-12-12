@@ -2,46 +2,50 @@ import React from 'react';
 import styled from 'styled-components';
 import { BsArrowRight } from 'react-icons/bs';
 
-export const Header = () => {
+import  '../styles/index.sass';
+
+export const Header = ({ step }) => {
   return (
     <Container>
-      {/* <Content> */}
-        <Steps>Step 1 of 3</Steps>
-        <Help>
-          Lost or have trouble?<Span>Get help</Span><BsArrowRight />
-        </Help>
-      {/* </Content> */}
+      <Steps>Step {step} of 3</Steps>
+      <HelpPart>
+        <Help>Lost or have trouble? &nbsp;</Help>
+        <BlueText> Get help &nbsp;</BlueText>
+        <BsArrowRight className="right-icon" />
+      </HelpPart>
     </Container>
   );
 };
 
 const Container = styled.header({
-  padding: '40px 100px',
+  padding: '30px 100px',
   display: 'flex',
   justifyContent: 'space-between',
+  width: '50%',
+  height: '100%',
+  alignItems: 'center'
+  // backgroundColor: 'aqua',
 });
 
-// const Content = styled.header({
-//   padding: '40px 100px',
-//   display: 'flex',
-//   justifyContent: 'space-between',
-//   alignItems: 'center'
-// });
-
-const Steps = styled.p({
+const Steps = styled.div({
   color: '#A4AEB4',
   fontSize: 15,
   fontWeight: 500,
   textTransform: 'uppercase'
 });
 
-const Help = styled.p({
+const HelpPart = styled.div({
   color: '#A4AEB4',
   fontSize: 15,
-  fontWeight: 500,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
 });
 
-const Span = styled.p({
+const Help = styled.p({});
+
+const BlueText = styled.p({
   color: '#2696E8',
+  fontWeight: 500,
 });
 
