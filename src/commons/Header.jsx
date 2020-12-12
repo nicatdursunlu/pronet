@@ -18,13 +18,10 @@ export const Header = ({ step }) => {
 };
 
 const Container = styled.header({
-  padding: '30px 100px',
+  padding: '30px 130px',
   display: 'flex',
   justifyContent: 'space-between',
-  width: '50%',
-  height: '100%',
-  alignItems: 'center'
-  // backgroundColor: 'aqua',
+  alignItems: 'center',
 });
 
 const Steps = styled.div({
