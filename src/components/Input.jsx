@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Input = ({ label, placeholder }) => {
+export const Input = ({ label, placeholder, className }) => {
   return (
     <Container>
       <Label>{label}</Label>
-      <TextInput placeholder={placeholder} autoFocus={false} />
+      <TextInput
+        placeholder={placeholder}
+        autoFocus={false}
+        className={className}
+      />
     </Container>
   );
 };
@@ -14,7 +18,7 @@ const Container = styled.div({
 
 });
 
-const Label = styled.p({
+export const Label = styled.p({
   fontSize: 14,
   color: '#A4AEB4'
 });
