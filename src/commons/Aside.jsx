@@ -29,10 +29,7 @@ export const Aside = () => {
 const Container = styled.div({
   backgroundColor: "#35A0EE",
   width: "25%",
-  paddingTop: 35,
-  paddingBottom: 35,
-  paddingLeft: 75,
-  paddingRight: 75,
+  padding: '40px 90px',
 });
 
 const Header = styled.div({
@@ -40,7 +37,7 @@ const Header = styled.div({
   textTransform: 'uppercase',
   fontWeight: '700',
   fontSize: 18,
-  paddingBottom: 250,
+  paddingBottom: 135,
 });
 
 const Span = styled.span({
@@ -48,7 +45,7 @@ const Span = styled.span({
 });
 
 const Stages = styled.div({
-  paddingBottom: 130,
+  paddingBottom: 122,
 });
 
 const Contact = styled.div({

@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import quote from '../assets/images/quote.png';
+
 export const MessageBox = () => {
   return (
     <Container>
+      <Image src={quote} />
       <Text>
         We care about your time, that's why we created a 3-stage onboarding
         that will not take more than 5 minutes to complete
@@ -13,38 +16,44 @@ export const MessageBox = () => {
         <Position>Co-founder, investor</Position>
         <Up>U<Span>p</Span></Up>
       </Row>
-
     </Container>
   );
 };
 
 const Container = styled.div({
   backgroundColor: 'white',
-  borderRadius: 4
+  borderRadius: 4,
+  padding: '35px 40px',
+});
+
+const Image = styled.img({
+  padding: '19px 15px',
+  borderRadius: 3,
+  backgroundColor: '#fff',
+  position: 'absolute',
+  top: 475,
+  left: 65,
+  boxShadow: '5px 5px 49px -14px rgba(0,0,0,0.75)',
 });
 
 const Text = styled.p({
   fontSize: 16,
-  fontWeight: 500,
   color: '#A4AEB4',
-  padding: 30,
-  // backgroundColor: 'red'
+  marginBottom: 0,
 });
 
 const Person = styled.p({
   fontSize: 16,
   fontWeight: 600,
-  paddingLeft: 30,
-  // backgroundColor: 'aqua'
+  marginBottom: 0,
+  marginTop: 20,
 });
 
 const Row = styled.div({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  paddingLeft: 30,
-  paddingRight: 30,
-  // backgroundColor: 'blue'
+  margin: '-30px 0',
 });
 
 const Position = styled.p({
