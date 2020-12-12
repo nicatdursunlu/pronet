@@ -18,7 +18,7 @@ export const Header = ({ step }) => {
 };
 
 const Container = styled.header({
-  padding: '30px 0',
+  padding: '20px 0 0 0',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',

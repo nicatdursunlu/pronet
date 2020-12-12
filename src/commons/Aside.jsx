@@ -28,8 +28,8 @@ export const Aside = () => {
 
 const Container = styled.div({
   backgroundColor: "#35A0EE",
-  width: "25%",
-  padding: '40px 90px',
+  width: "27%",
+  padding: '30px 50px',
 });
 
 const Header = styled.div({
@@ -45,7 +45,7 @@ const Span = styled.span({
 });
 
 const Stages = styled.div({
-  paddingBottom: 122,
+  paddingBottom: 120,
 });
 
 const Contact = styled.div({
@@ -59,5 +59,3 @@ const Text = styled.p({
   fontSize: 18,
   fontWeight: 700,
 });
-
-// #35A0EE

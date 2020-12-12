@@ -31,8 +31,8 @@ const Image = styled.img({
   borderRadius: 3,
   backgroundColor: '#fff',
   position: 'absolute',
-  top: 475,
-  left: 65,
+  top: 460,
+  left: 30,
   boxShadow: '5px 5px 49px -14px rgba(0,0,0,0.75)',
 });
 

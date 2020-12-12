@@ -14,9 +14,7 @@ export const Input = ({ label, placeholder, className }) => {
   );
 };
 
-const Container = styled.div({
-
-});
+const Container = styled.div({});
 
 export const Label = styled.p({
   fontSize: 14,
@@ -34,5 +32,4 @@ const TextInput = styled.input`
     outline: none;
     border-bottom: 2px solid #35A0EE;
   }
-  
 `;

@@ -6,7 +6,7 @@ import { Aside, Footer, Header, PageTitle } from '../../commons';
 import { Form } from './Form';
 
 export const ContactDetailsScreen = () => {
-  
+
   return (
     <Container>
       <Aside />
@@ -41,7 +41,7 @@ const Container = styled.div({
 const Main = styled.main({
   display: 'flex',
   flexDirection: 'column',
-  width: '64%',
+  width: '70%',
   padding: '0 130px',
 });
 
@@ -55,6 +55,7 @@ const Description = styled.p({
   fontSize: 16,
   color: '#A4AEB4',
   padding: '0 270px 0 0',
+  marginTop: -15,
 });
 
 const Expand = styled.div({
@@ -63,5 +64,5 @@ const Expand = styled.div({
   color: '#2696E8',
   display: 'flex',
   alignItems: 'center',
-  marginBottom: 50,
+  marginBottom: 80,
 })
