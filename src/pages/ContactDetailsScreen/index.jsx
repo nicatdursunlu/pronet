@@ -1,8 +1,17 @@
 import React from 'react';
-import { Aside } from '../../commons/Aside';
+import styled from 'styled-components';
+
+import { Aside, Header } from '../../commons';
 
 export const ContactDetailsScreen = () => {
   return (
-    <Aside />
-  )
-}
+    <Container>
+      <Aside />
+      <Header />
+    </Container>
+  );
+};
+
+const Container = styled.div({
+  display: 'flex',
+});
