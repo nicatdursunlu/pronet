@@ -18,7 +18,7 @@ export const Header = ({ step }) => {
 };
 
 const Container = styled.header({
-  padding: '30px 130px',
+  padding: '30px 0',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
@@ -41,7 +41,7 @@ const HelpPart = styled.div({
 
 const Help = styled.p({});
 
-const BlueText = styled.p({
+export const BlueText = styled.p({
   color: '#2696E8',
   fontWeight: 500,
 });

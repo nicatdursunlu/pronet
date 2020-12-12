@@ -11,7 +11,7 @@ export const PageTitle = ({  title, desc }) => {
 };
 
 const Container = styled.div({
-  padding: '0 270px 0 130px',
+  padding: '0 270px 0 0',
 });
 
 const Title = styled.h2({

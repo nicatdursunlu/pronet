@@ -17,7 +17,11 @@ export const Form = () => {
         <Input label="Full name" placeholder="John Doe" />
         <ReactTelInput defaultCountry="Azerbaijan" />
       </Row>
-      <Input label="E-mail address" placeholder="john.doe@unitedproperties.com" className="e-mail" />
+      <Input
+        label="E-mail address"
+        placeholder="john.doe@unitedproperties.com"
+        className="e-mail"
+      />
       <Label>Country</Label>
       <CountryDropdown
         className="country"
@@ -29,8 +33,7 @@ export const Form = () => {
 };
 
 const Container = styled.div({
-  padding: '10px 270px 0 130px',
-  // backgroundColor: 'red'
+  padding: '10px 270px 0 0',
 });
 
 const Row = styled.div({

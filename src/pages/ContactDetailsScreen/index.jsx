@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BsArrowRight } from 'react-icons/bs';
 
-import { Aside, Header, PageTitle } from '../../commons';
+import { Aside, Footer, Header, PageTitle } from '../../commons';
 import { Form } from './Form';
 
 export const ContactDetailsScreen = () => {
+  
   return (
     <Container>
       <Aside />
@@ -17,6 +19,16 @@ export const ContactDetailsScreen = () => {
             letting us know a little bit about you"
         />
         <Form />
+        <Privacy>Privacy policy</Privacy>
+        <Description>
+          We know you care about how your personal information
+          is used and shared, so we take your privacy seriously
+        </Description>
+        <Expand>
+          Expand privacy policy &nbsp;
+          <BsArrowRight className="right-icon" />
+        </Expand>
+        <Footer />
       </Main>
     </Container>
   );
@@ -30,5 +42,26 @@ const Main = styled.main({
   display: 'flex',
   flexDirection: 'column',
   width: '64%',
-  // backgroundColor: 'aqua'
+  padding: '0 130px',
 });
+
+const Privacy = styled.h3({
+  fontWeight: 700,
+  fontSize: 19,
+  marginTop: 30,
+});
+
+const Description = styled.p({
+  fontSize: 16,
+  color: '#A4AEB4',
+  padding: '0 270px 0 0',
+});
+
+const Expand = styled.div({
+  fontSize: 15,
+  fontWeight: 500,
+  color: '#2696E8',
+  display: 'flex',
+  alignItems: 'center',
+  marginBottom: 50,
+})
