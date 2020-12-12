@@ -3,21 +3,21 @@ import styled from 'styled-components';
 
 import { MessageBox, RadionButton } from '../components';
 
-export const Aside = () => {
+export const Aside = ({ active }) => {
   return (
     <Container>
       <Header>United<Span>Properties</Span></Header>
       <Stages>
         <Contact>
-          <RadionButton state={true} />
+          <RadionButton active={true} />
           <Text>Contact details</Text>
         </Contact>
         <Contact>
-          <RadionButton state={false} />
+          <RadionButton active={false} />
           <Text style={{ opacity: 0.5 }}>Investment plans</Text>
         </Contact>
         <Contact>
-          <RadionButton state={false} />
+          <RadionButton active={false} />
           <Text style={{ opacity: 0.5 }}>Investment preferences</Text>
         </Contact>
       </Stages>

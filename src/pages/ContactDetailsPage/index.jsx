@@ -5,7 +5,7 @@ import { BsArrowRight } from 'react-icons/bs';
 import { Aside, Footer, Header, PageTitle } from '../../commons';
 import { Form } from './Form';
 
-export const ContactDetailsScreen = () => {
+export const ContactDetailsPage = () => {
 
   return (
     <Container>

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const RadionButton = ({ state }) => {
+export const RadionButton = ({ active }) => {
   return (
-    <Container style={{ opacity: state ? 1 : 0.5 }}>
-      {state && <Content />}
+    <Container style={{ opacity: active ? 1 : 0.5 }}>
+      {active && <Content />}
     </Container>
   );
 };
